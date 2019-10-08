@@ -1,4 +1,5 @@
 import utilities from '../../helpers/utilities';
+import './grid.scss';
 
 const makeGrid = () => {
   let domString = '<table>';
@@ -9,7 +10,7 @@ const makeGrid = () => {
     }
     domString += '</tr>';
   }
-  domString = '</table>';
+  domString += '</table>';
 
   utilities.printToDom('grid', domString);
 };
